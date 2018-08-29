@@ -11,7 +11,7 @@
 
 將我們的**Wireframe(線框稿)**視覺化，簡單說就是最後設計師設計出來的畫面吧
 在這裡我就會規劃出每個元件滑鼠移過的效果，或是動畫的樣子
-過程中你可能需要一些臨時要用的圖片但不知道要去哪找，可以到這邊 [unsplash(https://unsplash.com/search/photos/sea-girl)
+過程中你可能需要一些臨時要用的圖片但不知道要去哪找，可以到這邊 [unsplash](https://unsplash.com/search/photos/sea-girl)
 這裡面的圖片都很漂亮畫質又高，然後可以免費下載
 
 圖片呢？？？？？？？？？？img/24_版型設計02（請記得換成自己的）.jpg
@@ -20,7 +20,7 @@
 
 把所有的設計稿串起來模擬成品的展現方式(後續分享)
 
-可以使用 [Adobe Experience Design XD(https://zh.wikipedia.org/wiki/Adobe_Experience_Design) 或是 [draw.io(https://about.draw.io/category/tutorial/n)去做版型設計
+可以使用 [Adobe Experience Design XD](https://zh.wikipedia.org/wiki/Adobe_Experience_Design) 或是 [draw.io](https://about.draw.io/category/tutorial/n)去做版型設計
 
 設計版型時最大的顧慮是自己切不切得出來這件事以及思考目前專案需求去做版面的設計，不會因為這個元件擺在這邊比較漂亮而使用
 
