@@ -1,0 +1,36 @@
+@import './reset.css';
+.menu {
+  height: 100vh;
+  width: 500px;
+  background-color: #7C7C7C;
+  float: left;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(130, 202, 196);
+}
+
+/*這邊將他的層級關係也寫進去，他是在 menu > title底下*/
+
+/* .menu .title .imgStyle {
+  width: 50px;
+} */
+
+.menu .title .min_picture {
+  background: url('../img/imgTag_un.jpg') no-repeat;
+  background-size: 50px auto;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.title {
+  /*這邊的寬度100%是抓menu設定的寬度*/
+  width: 100%;
+  /*寫一個適合的高度*/
+  height: 100px;
+  /*設定底色為#4A4A4A*/
+  background-color: #4A4A4A;
+}
