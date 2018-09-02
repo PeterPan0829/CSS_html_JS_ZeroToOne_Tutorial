@@ -127,6 +127,115 @@
 圖片呢？？？？？？？？？？img/33_版型設計11.jpg
 
 ## 第二個區塊
-
 這個區塊就是主要選單的部分，
-其實沒有很麻煩，因為節省難度所以設計直式單層的選單
+其實沒有很麻煩，因為節省難度所以設計直式 **單層** 的選單
+
+> Q：什麼是單層?
+A：我們網頁通常都會是頁面點擊進去又有一個頁面，那每點擊近一個頁面，我們就叫他一層
+
+### 把以上這個動作定義成一個概念：洋蔥！
+
+這邊選單的部分都是連續且樣式都會是同樣一個區塊，所以我們使用 **ul** **li** 去製作，擺放位置是在 **title** 底下
+
+```js
+<div class="menu">
+    <div class="title">
+        <div class="min_picture"></div>
+        <span>Peter</span>
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>Pag1</li>
+        <li>Pag2</li>
+        <li>Pag3</li>
+    </ul>
+</div>
+```
+
+這裡小小提醒，當再次包一層又一層的結構時（不管你在寫什麼語言），
+都記得當要再往下縮一層的時候，一定要往內縮一層，這樣可以增加程式的可讀性，
+再來是 **class命名** 時都要記得使用 **有意義的名稱**（命名規則在這裡就不細談）
+
+加完 **ul** **li** 來看一下結果
+
+圖片呢？？？？？？？？？？img/34_版型設計12.jpg
+
+有找到奇妙的地方嗎？
+我們在前面分享過 **ul** **li**，當時 **ul** 是無序會有小點，那為什麼在這邊沒有呢？
+那是因為我們的 **reset.css** 發揮作用囉！
+使用 **開發者工具** 點開使用搜尋功能搜尋ul or ol
+你會發現它們加了一個屬性 list-style: none;
+這代表的意思是已經幫你把標號或是序號通通都拿掉了
+
+
+## 第三個區塊
+主要是用來做 **社群連結** 或是其它網路平台的連結
+這裡一樣會使用一個 **div** 來包它，因為這是要用來做連結的所以我使用 **onclick.href** 點擊後會跳到另外我們指定的連結。並運用 **style="cursor:pointer;** 讓滑鼠移過去時顯示 **手的圖示**。
+
+```js
+ <div class="menu">
+    <div class="title">
+      <div class="min_picture"></div>
+      <span>Peter</span>
+    </div>
+
+    <ul>
+      <li>Home</li>
+      <li>Page1</li>
+      <li>Page2</li>
+      <li>Page3</li>
+    </ul>
+
+    <div class="link">
+      <div class="fb" onclick="location.href='https://www.facebook.com/';" style="cursor:pointer;"></div>
+      <div class="github" onclick="location.href='https://github.com/';" style="cursor:pointer;"></div>
+      <div class="instagram" onclick="location.href='https://www.instagram.com/';" style="cursor:pointer;"></div>
+    </div>
+
+```
+
+```js
+.menu .link {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+```
+
+### position：
+* 概念：負責用來 **定位** 的，這邊設定的 **absolute (絕對定位)**，意思是根據父層元素來做定位，若外層沒有元素，則依據當前瀏覽器畫面。通常我們使用時常說外相內絕，即是「外層相對定位 包 內層絕對定位」不過其實外絕內絕、外固內絕也是可以的，並沒有一定限制。
+
+* 詳解：代表它是一個孩子，我們要給他一個父親，讓他可以根據父親的區塊範圍定位，也就是相對位置，假如不給他一個父親他會自動認 body 當爸爸，到時候你就會看到區塊在頁面上一直跑在你不要他跑的位置。
+他爸是誰？是 menu 哦！他包在 menu 裡面所以 menu 就是爸爸。
+left：讓他距離目前的 父親左邊界0px
+bottom：讓他距離目前的 父親下邊界0px
+
+接下來這些是社群連結的三張小圖片的 css，這部分與上面放照片的方式一樣就不多做解釋～
+
+```js
+/*因為三張圖片的顯示範圍以及區塊模式都是一樣的所以統一寫在div標籤上*/
+ .menu .link div {
+     height: 20px;
+     width: 20px;
+     display: inline-block;
+ }
+
+.menu .link .fb {
+  background: url('../img/facebook-logo.png') no-repeat;
+  background-size: auto 20px;
+}
+
+.menu .link .github {
+  background: url('../img/github-logo.png') no-repeat;
+  background-size: 20px auto;
+}
+
+.menu .link .instagram {
+  background: url('../img/instagram-logo.png') no-repeat;
+  background-size: 20px auto;
+}
+```
+
+### 結果
+圖片呢？？？？？？？？？？img/35_版型設計13.jpg
