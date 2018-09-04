@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>版型設計切版(二)_基礎樣式1 _ 內距與外距</title>
+  <link rel="stylesheet" href="/Lesson_11/CSS/main.css">
+</head>
+
+<body>
+  <!-- menu為我們的左側選單框架
+  <div class="menu">
+    因為這是一個小區塊所以我們也使用一個div來包裹裡面的東西，並且給他一個class樣式方便我們調整
+    <div class="title">
+      <img class="imgStyle" src="./img/imgTag.jpg" alt="大頭貼">
+      <span>Peter</span>
+    </div>
+  </div> -->
+
+  <!-- 另一種方式 -->
+  <!-- <div class="menu">
+    <div class="title"> -->
+  <!--給這個div一個class名稱為：min_picture -->
+  <!-- <div class="min_picture"></div>
+      <span>Peter</span>
+    </div>
+  </div> -->
+  <div class="menu">
+    <div class="title">
+      <div class="min_picture"></div>
+      <span>Peter</span>
+    </div>
+
+    <ul>
+      <li>Home</li>
+      <li>Page1</li>
+      <li>Page2</li>
+      <li>Page3</li>
+    </ul>
+
+    <div class="link">
+      <div class="fb" onclick="location.href='https://www.facebook.com/';" style="cursor:pointer;"></div>
+      <div class="github" onclick="location.href='https://github.com/';" style="cursor:pointer;"></div>
+      <div class="instagram" onclick="location.href='https://www.instagram.com/';" style="cursor:pointer;"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="banner">
+      <div class="picture"></div>
+      <!--放置圖大頭照的div區塊-->
+      <span>Peter
+        <br>#人生剩力組
+        <br>Software Developer at StartUp
+      </span>
+    </div>
+    <!-- ＝＝＝＝＝＝＝＝＝＝看這裡＝＝＝＝＝＝＝＝＝＝ -->
+    <div class="news">
+      <div>最新文章</div>
+      <ul>
+        <li>蘋果日報</li>
+        <li>不自由日報</li>
+        <li>二周刊</li>
+      </ul>
+      <a href="#">More</a>
+    </div>
+    <!-- ＝＝＝＝＝＝＝＝＝＝看這裡＝＝＝＝＝＝＝＝＝＝ -->
+  </div>
+</body>
+
+</html>
