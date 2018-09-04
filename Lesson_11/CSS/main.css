@@ -1,0 +1,81 @@
+@import './reset.css';
+.menu {
+  height: 100vh;
+  width: 500px;
+  background-color: #7C7C7C;
+  float: left;
+}
+
+.menu .link {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menu .link div {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.menu .link .fb {
+  background: url('../img/facebook-logo.png') no-repeat;
+  background-size: auto 20px;
+}
+
+.menu .link .github {
+  background: url('../img/github-logo.png') no-repeat;
+  background-size: 20px auto;
+}
+
+.menu .link .instagram {
+  background: url('../img/instagram-logo.png') no-repeat;
+  background-size: 20px auto;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(130, 202, 196);
+}
+
+.content .banner {
+  width: 100%;
+  /*設定寬度為100%*/
+  height: 300px;
+  /*設定高度為300px*/
+  background-color: rgb(48, 173, 163);
+}
+
+.content .news {
+  /*顯示news的區塊範圍*/
+  background-color: rgb(29, 185, 113);
+}
+
+/*這邊將他的層級關係也寫進去，他是在 menu > title底下*/
+
+/* .menu .title .imgStyle {
+  width: 50px;
+} */
+
+.menu .title .min_picture {
+  background: url('../img/imgTag_un.jpg') no-repeat;
+  background-size: 95px auto;
+  height: 95px;
+  width: 95px;
+  /*圓角*/
+  border-radius: 50px;
+  display: inline-block;
+  margin: 20px 15px;
+}
+
+.title {
+  /*這邊的寬度100%是抓menu設定的寬度*/
+  /* width: 100%; */
+  /*寫一個適合的高度*/
+  /* height: 100px; */
+  /*設定底色為#4A4A4A*/
+  background-color: #4A4A4A;
+  padding: 20px 15px;
+}
