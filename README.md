@@ -1,8 +1,5 @@
 # This Repo is a series html, CSS and JavaScript tutorial, If U start self-learning Web develop probably can help U. Good luck ~
 
-### Getting Started & Clone Project
-> you can create a new project based on tutorial by doing the following:
-
 ### Brief of the introduction
 1. Lesson_1 基本 html 架構
 2. Lesson_2 常用標籤(一) _ html、body、head
