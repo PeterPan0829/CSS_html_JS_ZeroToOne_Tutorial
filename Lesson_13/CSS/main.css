@@ -1,0 +1,21 @@
+@import './reset.css';
+
+body {
+  background-color: #343434;
+}
+
+.button {
+  width: 100px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3em;
+}
+
+.button:hover .hover {
+  display: block;
+}
+
+.hover {
+  display: none;
+  background-color: #6c8840;
+}
