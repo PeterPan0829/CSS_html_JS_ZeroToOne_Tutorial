@@ -1,0 +1,57 @@
+@import './reset.css';
+
+body {
+  background-color: #4CB2D4;
+}
+
+.div {
+  position: relative;
+  top: 200px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.but {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.div:hover .show {
+  animation: animationName 0.5s linear forwards;
+  -moz-animation: animationName 0.5s linear forwards;
+  -webkit-animation: animationName 0.5s linear forwards;
+  -o-animation: animationName 0.5s linear forwards;
+  opacity: 1;
+}
+
+.tool {
+  background: #9FD1F0 url('https://image.flaticon.com/icons/png/512/658/658430.png') center no-repeat;
+  background-size: 50px auto;
+  z-index: 1;
+}
+
+.show {
+  opacity: 0;
+  background: url('https://image.flaticon.com/icons/svg/658/658360.svg') center no-repeat;
+  background-size: 50px auto;
+  z-index: 0;
+  margin-top: -100px;
+}
+
+@keyframes animationName {
+  0% {
+    opacity: 0;
+    margin-top: 0px;
+  }
+
+  50% {
+    opacity: 1;
+    margin-top: -130px;
+  }
+
+  100% {
+    margin-top: -100px;
+  }
+}
