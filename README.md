@@ -1,4 +1,6 @@
-This Repo is a series html, CSS and JavaScript tutorial, If U start self-learning Web develop probably can help U. Good luck ~
+This Repo is a series html, CSS and JavaScript tutorial,
+
+If U start self-learning Web develop probably can help U. Good luck ~
 ------------------------------------------
 
 ### Brief of the introduction
