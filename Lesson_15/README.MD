@@ -3,11 +3,13 @@
 來把最後一個部分完成！
 
 ### 示意圖
+
 圖片呢？？？？？？？？？？img/29_版型設計07（請記得換成自己的）.jpg
 
 ​	
 
 複習一下 **html** 的部分
+
 ```html
     <div class="news">
       <div>最新文章</div>
@@ -30,8 +32,8 @@
 
 > icon 推薦網站 https://www.flaticon.com
 
-
 ### html
+
 ```html
   <div class="div">
     <div class="tool"></div>
