@@ -1,15 +1,17 @@
 # 常用標籤(四) _ table（包含 tr、td、th、colspan、rowspan、caption）
 
-這是常用標籤的最後一個主題，之後開始分享 **CSS3** 的用法
+-------------------------------
 
-### table
+這是常用標籤的最後一個主題，之後開始分享 **CSS3** 的用法。
+
+## table
 
 ### table = 一般表格
 **如同字面的意思他就是表格，不知道多久以前的網頁貌似都是使用表格在做排版的**
 
 那我們就直接來分享用法
 
-```js
+```html
   <table border="1">
     <tr>
       <td>
@@ -22,25 +24,30 @@
   </table>
 ```
 
-**table** 標籤包住整個表格，在標籤裡面的 **border** 是我們用來設定表格的線框的
-**tr** 是橫列
-**td** 則是直行
+* **table** 標籤包住整個表格，在標籤裡面的 **border** 是我們用來設定表格的線框的
+
+* **tr** 是橫列
+
+* **td** 則是直行
+
 
 ### 結果
 
-圖片呢？？？？？？？？？？img/15
+![15](https://github.com/PeterPanTW/CSS_html_JS_ZeroToOne_Tutorial/blob/master/img/15_table01.jpg)
 
-### 合併欄位
+-------------------------------
+
+## 合併欄位
 
 那在製作表格的時候也很常用到合併的表格，那應該怎麼處理呢？
 看實際例子，假設我們今天要製作的表格是長這樣
 
-圖片呢？？？？？？？？？？img/16
+![16](https://github.com/PeterPanTW/CSS_html_JS_ZeroToOne_Tutorial/blob/master/img/16_table02.jpg)
 
 先用上述一般表格來排列
 
-```js
-  <table border="1">
+```html
+<table border="1">
     <tr>
       <td>格子</td>
       <td>合併的欄位</td>
@@ -56,11 +63,13 @@
 
 ### 結果
 第一列的最後面是不是多了段空白？
-那這時候在 **合併的欄位** 這一行的 **td** 裡面加上 **colspan="2"**
-**colspan="2"** 這個的意思是代表它會橫跨兩個格子，你也可以解釋成它就是將兩個格子合併再一起
+那這時候在**合併的欄位**這一行的`td`裡面加上`colspan="2"`
+`colspan="2"` 這個的意思是代表它會橫跨兩個格子，你也可以解釋成它就是將兩個格子合併再一起
+
+​	
 
 ### 實例
-```js
+```html
   <table border="1">
     <tr>
       <td>格子</td>
@@ -75,12 +84,14 @@
 ```
 
 ### 結果
-圖片呢？？？？？？？？？？img/17
+![17](https://github.com/PeterPanTW/CSS_html_JS_ZeroToOne_Tutorial/blob/master/img/17_table03.jpg)
 
-那如果是想要 **合併直行** 呢？那就要使用 **rowspan**
+​	
+
+那如果是想要**合併直行**呢？那就要使用`rowspan`
 
 ### 實例
-```js
+```html
   <table border="1">
     <tr>
       <td rowspan="2">格子</td>
@@ -91,17 +102,22 @@
       <td>午餐</td>
     </tr>
   </table>
-  ```
+```
 
 ### 結果
-圖片呢？？？？？？？？？？img/18
+![18](https://github.com/PeterPanTW/CSS_html_JS_ZeroToOne_Tutorial/blob/master/img/18_table04.jpg)
+
+​	
+
+這邊再補充說明幾個標籤：
+
+* **caption** 它是指我這整個表格的標題用法
+
+* **th** 是指我這個欄位的標題
 
 
-這邊再補充說明幾個標籤
-**caption** 它是指我這整個表格的標題用法
-**th** 是指我這個欄位的標題
 ### 實例
-```js
+```html
   <table border="1">
     <caption>I'm Title!!!</caption>
     <tr>
@@ -117,9 +133,13 @@
 ```
 
 ### 結果
-圖片呢？？？？？？？？？？img/19
+
+![19](https://github.com/PeterPanTW/CSS_html_JS_ZeroToOne_Tutorial/blob/master/img/19_table05.jpg)
+
+​	
 
 有沒有發現利用 **th** 包起來的欄位變成加粗了變得比較明顯？
-下一個 Lesson 就讓我們進入 **CSS** 的世界吧！！！！
+
+下回就來進入 **CSS** 的世界吧！！！！
 
 
